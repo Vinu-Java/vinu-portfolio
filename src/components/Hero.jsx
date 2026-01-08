@@ -20,7 +20,7 @@ export default function Hero() {
             View Projects
           </a>
           <a
-            href="src/assets/VINU_V_Java_Resume.pdf"
+            href="../assets/VINU_V_Java_Resume.pdf"
             className="btn secondary"
             target="_blank"
             rel="noreferrer"
