@@ -19,13 +19,23 @@ export default function Hero() {
           <a href="#projects" className="btn primary">
             View Projects
           </a>
+
           <a
             href="/resume/VINU_V_Java_Resume.pdf"
             className="btn secondary"
             target="_blank"
             rel="noreferrer"
           >
-            Download Resume
+            View Resume
+          </a>
+
+          <a
+            href="/resume/VINU_V_Java_Resume.pdf"
+            download
+            className="btn icon-btn"
+            aria-label="Download Resume"
+          >
+            <img src="/icons/download.png" alt="Download resume" />
           </a>
         </div>
       </div>

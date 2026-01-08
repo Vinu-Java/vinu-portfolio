@@ -15,11 +15,11 @@ export default function Achievements() {
               Solved <strong>150+</strong> problems on LeetCode
             </li>
             <li>
-              Solved <strong>50+</strong> problems on GeeksforGeeks
-            </li>
-            <li>
               Earned <strong>HackerRank Stars</strong> in Java and Problem
               Solving
+            </li>
+            <li>
+              Solved <strong>50+</strong> problems on GeeksforGeeks
             </li>
             <li>Consistently practicing DSA and core programming concepts</li>
           </ul>
@@ -28,11 +28,11 @@ export default function Achievements() {
             <a href="https://leetcode.com/u/vinu-ad/" target="_blank" rel="noreferrer">
               LeetCode
             </a>
-            <a href="https://www.geeksforgeeks.org/profile/vinuad?tab=activity" target="_blank" rel="noreferrer">
-              GeeksforGeeks
-            </a>
             <a href="https://www.hackerrank.com/profile/VINU_JAVA" target="_blank" rel="noreferrer">
               HackerRank
+            </a>
+            <a href="https://www.geeksforgeeks.org/profile/vinuad?tab=activity" target="_blank" rel="noreferrer">
+              GeeksforGeeks
             </a>
             <a href="https://github.com/Vinu-Java" target="_blank" rel="noreferrer">
               GitHub

@@ -37,7 +37,10 @@
 /* ========== BUTTONS ============ */
 .hero-buttons {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -46,16 +49,48 @@
     text-decoration: none;
     font-weight: 600;
     text-align: center;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .primary {
-    background: #2563eb;
+    background: linear-gradient(160deg,
+            rgba(52, 103, 221, 0.95),
+            rgba(2, 26, 98, 0.906));
     color: white;
 }
 
 .secondary {
-    border: 2px solid #2563eb;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background:
+        linear-gradient(#030b2e, #030b2e) padding-box,
+        linear-gradient(120deg, #2563eb, #04a241) border-box;
     color: #2563eb;
+}
+
+.icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background: linear-gradient(160deg,
+            rgba(2, 26, 98, 0.906),
+            rgba(52, 103, 221, 0.95));
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.icon-btn img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.btn:hover,
+.icon-btn:hover {
+    background-color: #1e4fd8;
+    transform: translateY(-2px);
 }
 
 /* ======= RIGHT IMAGE ========== */
@@ -69,6 +104,15 @@
     width: 280px;
     max-width: 100%;
     border-radius: 50%;
+    border: 4px solid transparent;
+    background:
+        linear-gradient(#030b2e, #030b2e) padding-box,
+        linear-gradient(90deg,
+            #2563eb,
+            #fbff15,
+            #04a241,
+            #e909e5e5,
+            #842047) border-box;
 }
 
 /* ========== TABLET & MOBILE ============ */
@@ -108,8 +152,13 @@
     }
 }
 
-/* ========= SMALL MOBILE ======== */
+@media (max-width: 600px) {
+    .hero-buttons {
+        justify-content: center;
+    }
+}
 
+/* ========= SMALL MOBILE ======== */
 @media (max-width: 480px) {
     .hero-left h1 {
         font-size: 2.2rem;

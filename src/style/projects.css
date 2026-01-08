@@ -3,7 +3,6 @@
     margin-bottom: 10px;
     text-align: center;
     color: #f8fafc;
-    /* premium heading */
 }
 
 /* ===== PROJECT LIST ===== */
@@ -25,17 +24,14 @@
     flex-direction: row-reverse;
 }
 
-/* ===== IMAGE ===== */
 .project-image img {
     width: 100%;
     max-width: 420px;
     border-radius: 14px;
     object-fit: cover;
     box-shadow: 0 18px 40px rgba(2, 6, 23, 0.6);
-    /* premium depth */
 }
 
-/* ===== CONTENT ===== */
 .project-content {
     flex: 1;
 }
@@ -44,14 +40,12 @@
     font-size: 1.6rem;
     margin-bottom: 10px;
     color: #f1f5f9;
-    /* clear title */
 }
 
 .project-content p {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #cbd5e1;
-    /* softer than white */
     margin-bottom: 15px;
     text-align: justify;
     text-justify: inter-word;
@@ -66,8 +60,7 @@
 }
 
 .tech-chip {
-    background: rgba(99, 179, 237, 0.12);
-    /* cyan glass */
+    background: rgba(6, 31, 100, 0.466);
     color: #e6edf5;
     padding: 5px 12px;
     border-radius: 20px;
@@ -82,17 +75,21 @@
 }
 
 .project-links a {
-    color: #63b3ed;
-    /* same as navbar accent */
+    padding: 8px 18px;
+    background: #2651e0ae;
+    border-radius: 8px;
+    color: #fff;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 500;
-    transition: color 0.2s ease, text-shadow 0.2s ease;
+    transition:
+        background-color 0.25s ease,
+        transform 0.2s ease;
 }
 
 .project-links a:hover {
-    color: #7dd3fc;
-    text-shadow: 0 0 10px rgba(99, 179, 237, 0.35);
+    background: #0e3befe1;
+    transform: translateY(-2px);
 }
 
 /* ===== MOBILE ===== */
@@ -100,7 +97,7 @@
 
     .projects-list {
         gap: 40px;
-        padding: 20px;
+        padding: 5px;
     }
 
     .project-row {

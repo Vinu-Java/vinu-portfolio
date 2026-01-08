@@ -19,14 +19,12 @@
     box-shadow: 0 18px 36px rgba(2, 6, 23, 0.65);
 }
 
-/* ===== Title ===== */
 .achievement-card h3 {
     font-size: 1.2rem;
     margin: 0;
     color: #f1f5f9;
 }
 
-/* ===== Description ===== */
 .achievement-card p {
     font-size: 0.95rem;
     line-height: 1.65;
@@ -35,12 +33,10 @@
     text-justify: inter-word;
 }
 
-/* ===== Highlighted Text ===== */
 .achievement-card strong {
     color: #63b3ed;
 }
 
-/* ===== Bullet Points ===== */
 .achievement-points {
     padding-left: 18px;
     margin-bottom: 14px;
@@ -80,9 +76,19 @@
 @media (max-width: 768px) {
     .achievements-wrapper {
         grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 20px;
+    }
+
+    .achievement-card {
+        padding: 20px;
     }
 
     .achievement-card h3 {
         text-align: center;
+    }
+
+    .achievement-links {
+        justify-content: center;
     }
 }
