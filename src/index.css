@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Premium dark background */
+    background:
+        radial-gradient(900px 450px at 85% -10%,
+            rgba(56, 189, 248, 0.08),
+            transparent 50%),
+        radial-gradient(700px 350px at 10% 20%,
+            rgba(99, 102, 241, 0.06),
+            transparent 45%),
+        linear-gradient(180deg,
+            #020617 0%,
+            #020617 55%,
+            #030b2e 100%);
+
+    /* Premium readable text */
+    color: #e6e9f0;
+
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 60px;
+}

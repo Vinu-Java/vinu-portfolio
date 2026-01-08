@@ -1,0 +1,59 @@
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+/* ===== Certification Card ===== */
+.cert-card {
+    background: rgba(10, 16, 48, 0.742);
+    padding: 18px;
+    border-radius: 8px;
+    border: 1px solid rgba(99, 179, 237, 0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(2, 6, 23, 0.6);
+}
+
+/* ===== Title ===== */
+.cert-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    color: #f1f5f9;
+}
+
+/* ===== Description ===== */
+.cert-card p {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    margin-bottom: 12px;
+}
+
+/* ===== Certificate Link ===== */
+.cert-card a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #63b3ed;
+    text-decoration: none;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.cert-card a:hover {
+    color: #7dd3fc;
+    text-shadow: 0 0 10px rgba(99, 179, 237, 0.35);
+}
+
+/* ========== MOBILE ========== */
+@media (max-width: 768px) {
+    .certifications .title {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .cert-card {
+        text-align: center;
+    }
+}

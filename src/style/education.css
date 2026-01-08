@@ -1,0 +1,55 @@
+
+
+.education-row {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+    gap: 40px;
+    padding: 20px 0;
+    max-width: 800px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.education-row:last-child {
+    border-bottom: none;
+}
+
+.edu-left h4 {
+    font-size: 1.2rem;
+    color: #f8fafc;
+    margin-top: 8px;
+    margin-bottom: 6px;
+}
+
+.edu-left p {
+    font-size: 1rem;
+    color: #e5e7eb;
+}
+
+.edu-right {
+    text-align: right;
+    font-size: 0.95rem;
+    color: #c7d2fe;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.grade {
+    font-weight: 600;
+    color: #93c5fd;
+}
+
+/* ========== MOBILE ========== */
+@media (max-width: 768px) {
+    .education-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .edu-right {
+        text-align: center;
+        align-items: center;
+    }
+}

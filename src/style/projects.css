@@ -1,0 +1,128 @@
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #f8fafc;
+    /* premium heading */
+}
+
+/* ===== PROJECT LIST ===== */
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 30px;
+}
+
+/* ===== PROJECT ROW ===== */
+.project-row {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.project-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* ===== IMAGE ===== */
+.project-image img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 14px;
+    object-fit: cover;
+    box-shadow: 0 18px 40px rgba(2, 6, 23, 0.6);
+    /* premium depth */
+}
+
+/* ===== CONTENT ===== */
+.project-content {
+    flex: 1;
+}
+
+.project-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #f1f5f9;
+    /* clear title */
+}
+
+.project-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #cbd5e1;
+    /* softer than white */
+    margin-bottom: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* ===== TECH STACK ===== */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.tech-chip {
+    background: rgba(99, 179, 237, 0.12);
+    /* cyan glass */
+    color: #e6edf5;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    border: 1px solid rgba(99, 179, 237, 0.2);
+}
+
+/* ===== LINKS ===== */
+.project-links {
+    display: flex;
+    gap: 20px;
+}
+
+.project-links a {
+    color: #63b3ed;
+    /* same as navbar accent */
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.project-links a:hover {
+    color: #7dd3fc;
+    text-shadow: 0 0 10px rgba(99, 179, 237, 0.35);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+    .projects-list {
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .project-row {
+        gap: 5px;
+    }
+
+    .project-content h3 {
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .project-row,
+    .project-row.reverse {
+        flex-direction: column;
+    }
+
+    .project-image img {
+        max-width: 100%;
+    }
+
+    .project-links {
+        justify-content: center;
+        gap: 40px;
+    }
+}
