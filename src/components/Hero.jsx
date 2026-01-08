@@ -1,5 +1,5 @@
-// import profileImg from "../assets/profile_passport_size.jpeg";
-import profileImg from "../assets/profile.jpg";
+// import profileImg from "/images/profile_passport_size.jpeg";
+import profileImg from "/images/profile.jpg";
 import "../style/hero.css";
 
 export default function Hero() {
