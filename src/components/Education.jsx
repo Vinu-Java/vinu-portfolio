@@ -15,7 +15,7 @@ export default function Education() {
           <div className="edu-right">
             <span>Anna University</span>
             <span>2025</span>
-            <span className="grade">CGPA: X.XX</span>
+            <span className="grade">CGPA: 7.74</span>
           </div>
         </div>
 
@@ -28,7 +28,7 @@ export default function Education() {
           <div className="edu-right">
             <span>State Board of Tamil Nadu</span>
             <span>2021</span>
-            <span className="grade">XX%</span>
+            <span className="grade">81%</span>
           </div>
         </div>
       </div>
