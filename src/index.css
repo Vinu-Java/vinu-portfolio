@@ -24,3 +24,55 @@ body {
     margin: 0;
     padding-top: 60px;
 }
+
+/* Scroll reveal animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Directional helpers */
+.reveal-right {
+    transform: translateX(60px);
+}
+
+.reveal-right.active {
+    transform: translateX(0);
+}
+
+.reveal-left {
+    transform: translateX(-60px);
+}
+
+.reveal-left.active {
+    transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+    .reveal {
+        transform: translateY(40px);
+        transition: all 0.6s ease;
+    }
+
+    .reveal-left {
+        transform: translateX(-40px);
+    }
+
+    .reveal-right {
+        transform: translateX(40px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        transition: none;
+        transform: none;
+        opacity: 1;
+    }
+}

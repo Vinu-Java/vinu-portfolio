@@ -1,11 +1,17 @@
-// import profileImg from "/images/profile_passport_size.jpeg";
 import profileImg from "/images/profile.jpg";
 import "../style/hero.css";
+import useScrollReveal from "../hooks/useScrollReveal";
 
 export default function Hero() {
+  const { ref, isVisible } = useScrollReveal({ once: false});
+
   return (
-    <section id="hero" className="hero">
-      <div className="hero-left">
+    <section
+      id="hero"
+      ref={ref}
+      className={`hero reveal ${isVisible ? "active" : ""}`}
+    >
+      <div className={`hero-left reveal ${isVisible ? "active" : ""}`}>
         <h1>Hi, I'm Vinu 👋</h1>
         <h2>Java Full Stack Developer</h2>
 
@@ -40,7 +46,11 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="hero-right">
+      <div
+        className={`hero-right reveal reveal-right ${
+          isVisible ? "active" : ""
+        }`}
+      >
         <img src={profileImg} alt="Vinu profile" />
       </div>
     </section>

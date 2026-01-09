@@ -1,8 +1,15 @@
 import "../style/about.css";
+import useScrollReveal from "../hooks/useScrollReveal";
 
 export default function About() {
+  const { ref, isVisible } = useScrollReveal({ once: false });
+
   return (
-    <section id="about" className="about">
+    <section
+      id="about"
+      ref={ref}
+      className={`about reveal reveal-left ${isVisible ? "active" : ""}`}
+    >
       <div className="container">
         <h2 className="title">About Me</h2>
 

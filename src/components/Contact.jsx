@@ -1,14 +1,29 @@
 import "../style/contact.css";
+import useScrollReveal from "../hooks/useScrollReveal";
 
 export default function Contact() {
+  const { ref, isVisible } = useScrollReveal({
+    once: false,
+    threshold: 0.25,
+  });
+
   return (
     <>
-      <section id="contact" className="contact">
+      <section
+        id="contact"
+        ref={ref}
+        className={`contact reveal ${isVisible ? "active" : ""}`}
+      >
         <div className="container">
           <h2 className="section-title">Contact</h2>
 
           <div className="contact-cards">
-            <div className="contact-card">
+            <div
+              className={`contact-card reveal reveal-left ${
+                isVisible ? "active" : ""
+              }`}
+              style={{ transitionDelay: "0.1s" }}
+            >
               <h3>Contact Details</h3>
 
               <div className="contact-row">
@@ -37,7 +52,12 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="contact-card contact-social-card">
+            <div
+              className={`contact-card contact-social-card reveal reveal-right ${
+                isVisible ? "active" : ""
+              }`}
+              style={{ transitionDelay: "0.25s" }}
+            >
               <h3>Connect with Me</h3>
 
               <div className="social-card-links">
@@ -70,7 +90,7 @@ export default function Contact() {
                 <a
                   href="https://leetcode.com/u/vinu-ad/"
                   target="_blank"
-                  className="social-card instagram"
+                  className="social-card"
                 >
                   <img
                     src="/icons/leetcode.png"
@@ -83,7 +103,7 @@ export default function Contact() {
                 <a
                   href="https://www.hackerrank.com/profile/VINU_JAVA"
                   target="_blank"
-                  className="social-card instagram"
+                  className="social-card"
                 >
                   <img
                     src="/icons/hackerrank.png"
@@ -103,7 +123,7 @@ export default function Contact() {
                     alt="GeeksForGeeks logo"
                     className="icon"
                   />
-                  GeeksForGeeks
+                  GeeksforGeeks
                 </a>
 
                 <a

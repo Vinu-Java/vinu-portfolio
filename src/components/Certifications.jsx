@@ -1,4 +1,22 @@
 import "../style/certifications.css";
+import useScrollReveal from "../hooks/useScrollReveal";
+
+function CertCard({ children, delay }) {
+  const { ref, isVisible } = useScrollReveal({
+    once: false,
+    threshold: 0.25,
+  });
+
+  return (
+    <div
+      ref={ref}
+      className={`cert-card reveal ${isVisible ? "active" : ""}`}
+      style={{ transitionDelay: delay }}
+    >
+      {children}
+    </div>
+  );
+}
 
 export default function Certifications() {
   return (
@@ -7,7 +25,7 @@ export default function Certifications() {
         <h2 className="section-title">Certifications</h2>
 
         <div className="certification-grid">
-          <div className="cert-card">
+          <CertCard delay="0.1s">
             <h4>SQL (Basic)</h4>
             <p>HackerRank</p>
             <a
@@ -17,9 +35,9 @@ export default function Certifications() {
             >
               View Certificate →
             </a>
-          </div>
+          </CertCard>
 
-          <div className="cert-card">
+          <CertCard delay="0.25s">
             <h4>Java (Basic)</h4>
             <p>HackerRank</p>
             <a
@@ -29,21 +47,21 @@ export default function Certifications() {
             >
               View Certificate →
             </a>
-          </div>
+          </CertCard>
 
-          <div className="cert-card">
+          <CertCard delay="0.4s">
             <h4>SQL for Beginners</h4>
             <p>Scaler</p>
             <a
-              href="https://moonshot.scaler.com/s/sl/L7SB9iYnkm?_gl=1*fijlfe*_gcl_aw*R0NMLjE3NjE2MzUyOTIuQ2p3S0NBancwNEhJQmhCOEVpd0E4akdOYmFiN1BQTWIyMkVidDJCWFVHYTlLZ0IzOHp2b0E3R0JGQTEtMzhGTmZFV1FOeDhPdV9UUFZSb0NfQlVRQXZEX0J3RQ..*_gcl_au*MTQ0NDEyOTUwNC4xNzYxNjM1MDQ2LjE3MjA1NjQzMTQuMTc2MTYzNTI4NS4xNzYxNjM1MzM1*FPAU*MTQ0NDEyOTUwNC4xNzYxNjM1MDQ2*_ga*MTMwNjY3NjAzNy4xNzYxNjM1MDQ2*_ga_53S71ZZG1X*czE3NjE2MzUwNDYkbzEkZzEkdDE3NjE2MzU0NjEkajgkbDAkaDkyODQwODQzMQ.."
+              href="https://moonshot.scaler.com/s/sl/L7SB9iYnkm"
               target="_blank"
               rel="noreferrer"
             >
               View Certificate →
             </a>
-          </div>
+          </CertCard>
 
-          <div className="cert-card">
+          <CertCard delay="0.55s">
             <h4>Java Programming</h4>
             <p>Great Learning</p>
             <a
@@ -53,7 +71,7 @@ export default function Certifications() {
             >
               View Certificate →
             </a>
-          </div>
+          </CertCard>
         </div>
       </div>
     </section>
