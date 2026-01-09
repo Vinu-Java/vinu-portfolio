@@ -3,59 +3,68 @@ import { useState } from "react";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
+  const scrollToSection = (id) => {
+    setOpen(false);
+
+    const section = document.getElementById(id);
+    section?.scrollIntoView({
+      behavior: "smooth"
+    });
+  };
+
   return (
     <>
       {open && <div className="nav-overlay" onClick={() => setOpen(false)} />}
 
       <nav className="navbar">
-        <a href="#hero" className="logo" onClick={() => setOpen(false)}>
+        <button type="button" className="logo" onClick={() => scrollToSection("hero")} aria-label="Scroll to Hero section">
           Vinu's Portfolio
-        </a>
+        </button>
 
-        <button className="menu-btn" onClick={() => setOpen(!open)}>
+        <button className="menu-btn" onClick={() => setOpen(!open)} aria-label="Toggle navigation menu" aria-expanded={open}>
           ☰
         </button>
 
         <ul className={open ? "nav-links open" : "nav-links"}>
           <li>
-            <a href="#hero" onClick={() => setOpen(false)}>
+            <button type="button" onClick={() => scrollToSection("hero")} aria-label="Scroll to Hero section">
               Home
-            </a>
+            </button>
           </li>
           <li>
-            <a href="#about" onClick={() => setOpen(false)}>
+            <button type="button" onClick={() => scrollToSection("about")} aria-label="Scroll to About section">
               About
-            </a>
+            </button>
           </li>
           <li>
-            <a href="#skills" onClick={() => setOpen(false)}>
+            <button type="button" onClick={() => scrollToSection("skills")} aria-label="Scroll to Skills section">
               Skills
-            </a>
+            </button>
           </li>
           <li>
-            <a href="#projects" onClick={() => setOpen(false)}>
+            <button type="button" onClick={() => scrollToSection("projects")} aria-label="Scroll to Projects section">
               Projects
-            </a>
+            </button>
           </li>
           <li>
-            <a href="#certifications" onClick={() => setOpen(false)}>
+            <button type="button" onClick={() => scrollToSection("certifications")} aria-label="Scroll to Certifications section">
               Certifications
-            </a>
+            </button>
           </li>
           <li>
-            <a href="#education" onClick={() => setOpen(false)}>
+            <button type="button" onClick={() => scrollToSection("education")} aria-label="Scroll to Education section">
               Education
-            </a>
+            </button>
           </li>
           <li>
-            <a href="#achievements" onClick={() => setOpen(false)}>
+            <button type="button" onClick={() => scrollToSection("achievements")} aria-label="Scroll to Achievements section">
               Achievements
-            </a>
+            </button>
           </li>
           <li>
-            <a href="#contact" onClick={() => setOpen(false)}>
+            <button type="button" onClick={() => scrollToSection("contact")} aria-label="Scroll to Contact section">
               Contact
-            </a>
+            </button>
           </li>
         </ul>
       </nav>

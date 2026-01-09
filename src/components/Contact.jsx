@@ -13,7 +13,7 @@ export default function Contact() {
 
               <div className="contact-row">
                 <span>Name</span>
-                <p>Vinu V</p>
+                <p>VINU V</p>
               </div>
 
               <div className="contact-row">
@@ -46,6 +46,11 @@ export default function Contact() {
                   target="_blank"
                   className="social-card github"
                 >
+                  <img
+                    src="/icons/github.png"
+                    alt="Github logo"
+                    className="icon"
+                  />
                   GitHub
                 </a>
 
@@ -54,15 +59,12 @@ export default function Contact() {
                   target="_blank"
                   className="social-card linkedin"
                 >
+                  <img
+                    src="/icons/linkedin.png"
+                    alt="LinkedIn logo"
+                    className="icon"
+                  />
                   LinkedIn
-                </a>
-
-                <a
-                  href="https://www.instagram.com/vinu_v_ofcl/"
-                  target="_blank"
-                  className="social-card instagram"
-                >
-                  Instagram
                 </a>
 
                 <a
@@ -70,6 +72,11 @@ export default function Contact() {
                   target="_blank"
                   className="social-card instagram"
                 >
+                  <img
+                    src="/icons/leetcode.png"
+                    alt="Leetcode logo"
+                    className="icon"
+                  />
                   Leetcode
                 </a>
 
@@ -78,7 +85,52 @@ export default function Contact() {
                   target="_blank"
                   className="social-card instagram"
                 >
+                  <img
+                    src="/icons/hackerrank.png"
+                    alt="HackerRank logo"
+                    className="icon"
+                  />
                   HackerRank
+                </a>
+
+                <a
+                  href="https://www.geeksforgeeks.org/profile/vinuad?tab=activity"
+                  target="_blank"
+                  className="social-card geeksforgeeks"
+                >
+                  <img
+                    src="/icons/geeksforgeeks.png"
+                    alt="GeeksForGeeks logo"
+                    className="icon"
+                  />
+                  GeeksForGeeks
+                </a>
+
+                <a
+                  href="https://wa.me/919500882368?text=Hello%20Vinu,%20I%20saw%20your%20portfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-card whatsapp"
+                >
+                  <img
+                    src="/icons/whatsapp.png"
+                    alt="WhatsApp logo"
+                    className="icon"
+                  />
+                  WhatsApp
+                </a>
+
+                <a
+                  href="https://www.instagram.com/vinu_v_ofcl/"
+                  target="_blank"
+                  className="social-card instagram"
+                >
+                  <img
+                    src="/icons/instagram.png"
+                    alt="Instagram logo"
+                    className="icon"
+                  />
+                  Instagram
                 </a>
               </div>
             </div>

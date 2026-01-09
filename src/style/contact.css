@@ -52,7 +52,6 @@
 }
 
 /* ================= SOCIAL CARD (RIGHT SIDE) ================= */
-
 .contact-social-card {
     display: flex;
     flex-direction: column;
@@ -63,30 +62,53 @@
 .social-card-links {
     display: flex;
     flex-direction: column;
-    gap: 18px;
-    width: 80%;
-    margin-top: 10px;
+    gap: 10px;
+    width: 85%;
+    margin-top: 12px;
 }
 
 /* ===== Social Card ===== */
 .social-card {
-    padding: 12px 18px;
-    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+    text-align: left;
+
+    padding: 5px 20px;
+    border-radius: 14px;
+
     font-size: 1rem;
     font-weight: 600;
-    text-decoration: none;
     color: #e6edf5;
-    background: rgba(12, 14, 75, 0.171);
-    border: 1px solid rgba(99, 179, 237, 0.2);
-    transition: transform 0.2s ease,
-        background-color 0.2s ease,
-        box-shadow 0.2s ease;
+    text-decoration: none;
+
+    background: linear-gradient(135deg,
+            rgba(20, 25, 120, 0.35),
+            rgba(10, 15, 60, 0.35));
+
+    border: 1px solid rgba(99, 179, 237, 0.25);
+    backdrop-filter: blur(8px);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
 }
 
 .social-card:hover {
-    transform: translateY(-3px);
-    background: rgba(5, 15, 105, 0.358);
-    box-shadow: 0 8px 16px rgba(69, 74, 215, 0.35);
+    transform: translateY(-4px) scale(1.03);
+    background: linear-gradient(135deg,
+            rgba(60, 90, 255, 0.45),
+            rgba(30, 40, 180, 0.45));
+    box-shadow: 0 12px 28px rgba(60, 90, 255, 0.35);
+}
+
+.icon {
+    margin-right: 10px;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    justify-self: right;
 }
 
 /* ===== Footer ===== */

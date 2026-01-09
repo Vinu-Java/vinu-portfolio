@@ -118,6 +118,11 @@
         max-width: 100%;
     }
 
+    .tech-stack {
+        justify-content: center;
+        gap: 8px;
+    }
+
     .project-links {
         justify-content: center;
         gap: 40px;

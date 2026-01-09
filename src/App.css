@@ -46,6 +46,8 @@ button,
 
 /* ===== Logo ===== */
 .logo {
+  background-color: transparent;
+  border: none;
   text-decoration: none;
   font-size: 1.15rem;
   font-weight: 600;
@@ -71,7 +73,7 @@ button,
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 24px;
+  gap: 12px;
   margin: 0;
   padding: 0;
   opacity: 1;
@@ -84,20 +86,22 @@ button,
   transform: translateY(0);
 }
 
-.nav-links li a {
+.nav-links li button {
   text-decoration: none;
   color: #d1d9e6;
+  background-color: transparent;
+  border: none;
   font-size: 0.95rem;
   font-weight: 500;
   position: relative;
 }
 
-.nav-links li a:hover {
+.nav-links li button:hover {
   color: #7dd3fc;
 }
 
 /* ===== Link underline ===== */
-.nav-links li a::after {
+.nav-links li button::after {
   content: "";
   position: absolute;
   left: 0;
@@ -111,7 +115,7 @@ button,
   transition: width 0.2s ease;
 }
 
-.nav-links li a:hover::after {
+.nav-links li button:hover::after {
   width: 100%;
 }
 
