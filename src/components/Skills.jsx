@@ -13,7 +13,6 @@ export default function Skills() {
 
   return (
     <>
-      {/* Skills */}
       <section
         id="skills"
         ref={skillsRef}
@@ -27,7 +26,6 @@ export default function Skills() {
               <span
                 key={skill}
                 className={`skill-chip reveal ${skillsVisible ? "active" : ""}`}
-                style={{ transitionDelay: `${index * 0.08}s` }}
               >
                 {skill}
               </span>
@@ -36,7 +34,6 @@ export default function Skills() {
         </div>
       </section>
 
-      {/* Tools */}
       <section
         ref={toolsRef}
         className={`reveal ${toolsVisible ? "active" : ""}`}
@@ -49,7 +46,6 @@ export default function Skills() {
               <span
                 key={tool}
                 className={`skill-chip reveal ${toolsVisible ? "active" : ""}`}
-                style={{ transitionDelay: `${index * 0.08}s` }}
               >
                 {tool}
               </span>
