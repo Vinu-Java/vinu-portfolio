@@ -17,8 +17,8 @@ export const projects = [
     description:
       "A full-stack To-Do management application that allows users to create, update, delete, and track tasks. The frontend is built with React, while the backend is developed using Spring Boot with RESTful APIs for seamless client-server communication.",
     tech: ["React", "Spring Boot", "REST APIs", "Java", "MySQL"],
-    github: "https://github.com/Vinu-Java/fullstack-todo-springboot.git",
-    demo: "https://fullstack-todo-app.vercel.app",
+    github: "https://github.com/Vinu-Java/taskify-fullstack.git",
+    demo: "https://taskify-by-vinu.vercel.app/",
   },
   {
     id: 3,
