@@ -36,7 +36,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="/resume/VINU_V_Java_Resume.pdf"
+            href="/resume/VINU_V_Java_FullStack_Resume.pdf"
             download
             className="btn icon-btn"
             aria-label="Download Resume"
