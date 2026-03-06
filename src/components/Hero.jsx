@@ -27,7 +27,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="/resume/VINU_V_Java_Resume.pdf"
+            href="/resume/VINU_V_Java_FullStack_Resume.pdf"
             className="btn secondary"
             target="_blank"
             rel="noreferrer"
